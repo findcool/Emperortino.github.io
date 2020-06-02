@@ -137,10 +137,10 @@ pre {
 code {
     padding: 1px 5px;
     top: 13px !important;
-    font-family: Inconsolata, Monaco, Consolas, 'Courier New', Courier, monospace;
+    font-family: ;
     font-size: 0.91rem;
-    color: #e96900;
-    background-color: #f8f8f8;
+    color: #0ABF5B;
+    background-color: #F3F5F9;
     border-radius: 2px;
 }
 
@@ -2915,7 +2915,7 @@ pre {
     overflow:auto
 }
 code,kbd,pre,samp {
-    font-family:monospace,monospace;
+    font-family:-webkit-pictograph;
     font-size:1em
 }
 button,input,optgroup,select,textarea {
@@ -9972,4 +9972,20 @@ td.hljs-ln-numbers {
 
 @media(max-width:1200px) {
     .toc {display: none;}
+}
+
+
+
+
+
+if hexo-config('footer.icon.animated') {
+    #animate {
+    animation: iconAnimate 1.88s ease-in-out infinite;
+    }
+}
+
+.with-love {
+  display: inline-block;
+  margin: 0 5px;
+  color: #9a6eac;
 }
