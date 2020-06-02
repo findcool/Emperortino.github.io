@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://tofunny.club/"/>
-  <updated>2020-06-02T12:29:24.169Z</updated>
+  <updated>2020-06-02T15:19:02.828Z</updated>
   <id>http://tofunny.club/</id>
   
   <author>
@@ -17,11 +17,42 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>Markdown</title>
+    <link href="http://tofunny.club/2020/06/02/markdown/"/>
+    <id>http://tofunny.club/2020/06/02/markdown/</id>
+    <published>2020-06-02T13:36:30.000Z</published>
+    <updated>2020-06-02T15:19:02.828Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;center&gt;
+
+&lt;h1 id=&quot;1-Markdown标题&quot;&gt;&lt;a href=&quot;#1-Markdown标题&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="教程" scheme="http://tofunny.club/categories/%E6%95%99%E7%A8%8B/"/>
+    
+    
+      <category term="MD" scheme="http://tofunny.club/tags/MD/"/>
+    
+      <category term="教程" scheme="http://tofunny.club/tags/%E6%95%99%E7%A8%8B/"/>
+    
+  </entry>
+  
+  <entry>
     <title>matery魔改</title>
     <link href="http://tofunny.club/2020/06/02/matery-mo-gai/"/>
     <id>http://tofunny.club/2020/06/02/matery-mo-gai/</id>
     <published>2020-06-02T09:30:21.000Z</published>
-    <updated>2020-06-02T12:29:24.169Z</updated>
+    <updated>2020-06-02T13:34:02.613Z</updated>
     
     <summary type="html">
     

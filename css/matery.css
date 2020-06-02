@@ -139,9 +139,14 @@ code {
     top: 13px !important;
     font-family: ;
     font-size: 0.91rem;
-    color: #0ABF5B;
+    color: #00e7ff;
     background-color: #F3F5F9;
     border-radius: 2px;
+}
+
+code:hover 
+{
+    background-color: #ffe20f;
 }
 
 .code_copy {
@@ -1181,11 +1186,12 @@ article .article-tags .chip {
 
 #articleContent a {
     padding: 0 2px;
-    color: #42b983;
+    color: #4f83e0;
     font-weight: 500;
     text-decoration: underline;
     word-wrap: break-word;
 }
+
 
 #articleContent .img-item {
     text-align: center;
@@ -3046,7 +3052,7 @@ kbd {
 }
 code,kbd,tt,var {
     font-size:15px;
-    font-size:.9375rem
+    font-size:1.25rem
 }
 abbr,acronym {
     border-bottom:1px dotted #666;
