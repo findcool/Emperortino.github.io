@@ -635,9 +635,10 @@
 <p>作用：为客户机提供域名解析服务器</p>
 <h3 id="2-域名组成"><a href="#2-域名组成" class="headerlink" title="2.域名组成"></a>2.域名组成</h3><h4 id="2-1-域名组成概述"><a href="#2-1-域名组成概述" class="headerlink" title="2.1 域名组成概述"></a>2.1 域名组成概述</h4><p>如”<a href="www.baidu.com"></a>“为一个域名，严格来说：baidu.com”才是一个域名（唯一）,”www”为主机名。</p>
 <p>“主机名.域名”为完全限定域名（FQDN–完全合格的域名）,一个域名可以有多个主机,但是<code>域名</code>则是唯一的,所以”主机名.域名”也是唯一的。</p>
-<pre><code>nslookup 主机名.域名
+<pre class=" language-域名"><code class="language-域名">nslookup 主机名.域名(查看IP地址)
 
-查看IP地址</code></pre><pre class=" language-域名"><code class="language-域名">如： www.baidu.com.
+
+如： www.baidu.com.
 
 .为根域
 
@@ -645,10 +646,13 @@
 
 baidu为一级域
 
-www为主机名</code></pre>
-<pre><code>FQDN = 主机名.DNS后缀
+www为主机名
+
+
+FQDN = 主机名.DNS后缀
 
 FQDN （完整合格的域名）</code></pre>
+
             </div>
             <hr/>
 
@@ -1707,7 +1711,7 @@ $(function () {
                   
     <!-- 上吊猫 -->
     <div class="back-to-top cd-top faa-float animated cd-is-visible" style="top: -900px;"></div>
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/Emperortino/CDN2/fun/back-top/css/top.css" />
+    <link rel="stylesheet" type="text/css" href="https://github.com/Emperortino/CDN2/fun/back-top/css/top.css" />
     <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/Emperortino/CDN2/fun/back-top/js/top.js"></script>                            
 </body>
 
