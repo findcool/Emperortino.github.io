@@ -34,14 +34,12 @@
 <link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css"></head>
 
 
+
+
+
+
 <body>
     <header class="navbar-fixed">
-<!-- Fun -->
-<script type="text/javascript">
-WIDGET = {FID: '6kGgdmxypq'}
-</script>
-<script type="text/javascript" src="https://apip.weatherdt.com/float/static/js/r.js?v=1111"></script>
-
     <nav id="headNav" class="bg-color nav-transparent">
         <div id="navContainer" class="nav-wrapper container">
             <div class="brand-logo">
@@ -441,6 +439,7 @@ WIDGET = {FID: '6kGgdmxypq'}
 
 </header>
 
+
     
 
 
@@ -618,11 +617,16 @@ WIDGET = {FID: '6kGgdmxypq'}
                 
 
                 
+                <div class="post-date info-break-policy">
+                    <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
+                    2020-06-11
+                </div>
+                
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    200
+                    443
                 </div>
                 
 
@@ -664,6 +668,45 @@ WIDGET = {FID: '6kGgdmxypq'}
 <pre class=" language-js"><code class="language-js"><span class="token operator">&lt;</span><span class="token operator">!</span><span class="token operator">--</span>樱花特效<span class="token operator">--</span><span class="token operator">-</span><span class="token operator">></span>
     <span class="token operator">&lt;</span>script type<span class="token operator">=</span><span class="token string">"text/javascript"</span> src<span class="token operator">=</span><span class="token string">"https://cdn.jsdelivr.net/gh/Emperortino/CDN2/js/cool/sakura.js"</span><span class="token operator">></span><span class="token operator">&lt;</span><span class="token operator">/</span>script<span class="token operator">></span></code></pre>
 <p>也可以自己下载下来保存，然后在<code>src</code>后面写入自己的路径</p>
+<h3 id="4-文章末尾添加结束标记"><a href="#4-文章末尾添加结束标记" class="headerlink" title="4.文章末尾添加结束标记"></a>4.文章末尾添加结束标记</h3><p>效果如下：<br><img src="" alt=""></p>
+<p>新建布局文件<code>post-end-tag.swig</code>，添加代码如下：</p>
+<pre class=" language-themes\matery\layout\_macro\post-end-tag.swig"><code class="language-themes\matery\layout\_macro\post-end-tag.swig"><div>
+  {% if not is_index %}
+    <div style="text-align:center;color:#bfbfbf;font-size:16px;">
+      <span>-------- 本文结束 </span>
+      <i class="fa fa-{{ config.post_end_tag.icon }}"></i>
+      <span> 感谢阅读 --------</span>
+    </div>
+  {% endif %}
+</div></code></pre>
+<p>在文章布局中添加如下：</p>
+<pre class=" language-themes\matery\layout\post.ejs"><code class="language-themes\matery\layout\post.ejs">{% if config.post_end_tag.enabled and not is_index %}
+  <div>
+   {% include 'post-end-tag.swig' %}
+  </div>
+{% endif %}
+</code></pre>
+<p>最后在站点配置文件中添加如下：</p>
+<pre class=" language-_config.yml"><code class="language-_config.yml">post_end_tag:
+  enabled: true  # 是否开启文末的本文结束标记
+  icon: paw # 结束标记之间的图标</code></pre>
+<p>重启服务器：</p>
+<pre class=" language-Hexo"><code class="language-Hexo">执行：
+hexo clean 
+hexo g
+hexo s</code></pre>
+<h3 id="5-个性化回到顶部"><a href="#5-个性化回到顶部" class="headerlink" title="5.个性化回到顶部"></a>5.个性化回到顶部</h3><p>打开主题的layout文件夹中的layout.ejs文件，添加代码:</p>
+<pre class=" language-css"><code class="language-css">&lt;!-- 上吊猫 -->
+&lt;div class=<span class="token string">"back-to-top cd-top faa-float animated cd-is-visible"</span> style=<span class="token string">"top: -900px;"</span>>&lt;/div>
+&lt;link rel=<span class="token string">"stylesheet"</span> type=<span class="token string">"text/css"</span> href=<span class="token string">"https://cdn.jsdelivr.net/gh/Emperortino/CDN2/fun/back-top/css/top.css"</span> />
+&lt;script type=<span class="token string">"text/javascript"</span> src=<span class="token string">"https://cdn.jsdelivr.net/gh/Emperortino/CDN2/fun/back-top/js/top.js"</span>>
+&lt;/script> </code></pre>
+<h3 id="6-修改顶部菜单栏"><a href="#6-修改顶部菜单栏" class="headerlink" title="6.修改顶部菜单栏"></a>6.修改顶部菜单栏</h3><ol>
+<li>不移动时隐藏菜单栏<br>```<br>header .nav-transparent {<br> background-color: transparent !important;<br> background-image: none;<br> box-shadow: none;</li>
+</ol>
+<ul>
+<li>display: none;<br>}<br>```</li>
+</ul>
 
             </div>
             <hr/>
@@ -1455,6 +1498,8 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
 
 
 
+
+
     <footer class="page-footer bg-color">
     
         <link rel="stylesheet" href="/libs/aplayer/APlayer.min.css">
@@ -1526,7 +1571,7 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">4.8k</span>&nbsp;字
+                class="white-color">10.6k</span>&nbsp;字
             
             
             
@@ -1653,12 +1698,16 @@ $(function () {
 });
 </script>
 
+
     <!-- 回到顶部按钮 -->
-<div id="backTop" class="top-scroll">
+<!--
+<div id="backTop" class="top-scroll top-scroll-on">
     <a class="btn-floating btn-large waves-effect waves-light" href="#!">
         <i class="fas fa-arrow-up"></i>
     </a>
 </div>
+-->
+
 
 
     <script src="/libs/materialize/materialize.min.js"></script>
@@ -1695,7 +1744,7 @@ $(function () {
 
     
 
-    
+
 
     
     <script type="text/javascript" color="0,0,255"
@@ -1715,13 +1764,34 @@ $(function () {
     
 
 
+    <!-- DaoVoic插件  -->
+    
+    <script>
+        (function (i, s, o, g, r, a, m) {
+            i["DaoVoiceObject"] = r;
+            i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+            a = s.createElement(o), m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            a.charset = "utf-8";
+            m.parentNode.insertBefore(a, m)
+        })(window, document, "script", ('https:' == document.location.protocol ? 'https:' : 'http:') +
+            "//widget.daovoice.io/widget/94424b66.js", "daovoice")
+        daovoice('init', {
+            app_id: "94424b66"
+        });
+        daovoice('update');
+    </script>
+    
 
-    <!-- Fun  天气插件 -->
+
+    <!-- For-Fun -->
     <script type="text/javascript">
-    WIDGET = {FID: '6kGgdmxypq'}
+    WIDGET = {FID: 'MxPL4WHCMf'}
     </script>
     <script type="text/javascript" src="https://apip.weatherdt.com/float/static/js/r.js?v=1111"></script>
-
 
     <!-- 闲聊么 -->
     <script>
@@ -1738,7 +1808,11 @@ $(function () {
 
     <!--樱花特效--->
     <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/Emperortino/CDN2/js/cool/sakura.js"></script>
-                                                
+                  
+    <!-- 上吊猫 -->
+    <div class="back-to-top cd-top faa-float animated cd-is-visible" style="top: -900px;"></div>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/Emperortino/CDN2/fun/back-top/css/top.css" />
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/Emperortino/CDN2/fun/back-top/js/top.js"></script>                            
 </body>
 
 </html>

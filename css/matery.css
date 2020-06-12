@@ -299,6 +299,7 @@ header .nav-transparent {
     box-shadow: none;
 }
 
+
 header nav .brand-span {
     font-size: 1.45rem;
 }
@@ -1188,7 +1189,7 @@ article .article-tags .chip {
     padding: 0 2px;
     color: #4f83e0;
     font-weight: 500;
-    text-decoration: underline;
+    text-decoration: none;
     word-wrap: break-word;
 }
 
@@ -1890,7 +1891,9 @@ footer .copy-right {
     white-space: pre-wrap;
 }
 
-/*回到顶部按钮样式*/
+
+
+/*回到顶部按钮样式
 .top-scroll {
     display: none;
     position: fixed;
@@ -1902,7 +1905,7 @@ footer .copy-right {
 }
 
 .top-scroll .btn-floating {
-    background: linear-gradient(to bottom right, #FF5E3A 0%, #FF2A68 100%);
+    background: url("https://res.cloudinary.com/valent/image/upload/v1591543627/Blog/photos/scroll_ttzaqp.png");
     width: 48px;
     height: 48px;
 }
@@ -1911,6 +1914,30 @@ footer .copy-right {
     line-height: 48px;
     font-size: 1.8rem;
 }
+*/
+
+
+//自定义回到顶部样式
+.top-scroll {
+  right: 60px;
+  width: 70px;  //图片素材宽度
+  height: 900px;  //图片素材高度
+  top: -900px;
+  bottom: unset;
+  transition: all .5s ease-in-out;
+  background: url("https://res.cloudinary.com/valent/image/upload/v1591543627/Blog/photos/scroll_ttzaqp.png");
+
+  //隐藏箭头图标
+  > i {
+    display: none;
+  }
+
+  &.top-scroll-on {
+    bottom: unset;
+    top: 100vh < (900px + 200px) ? calc( 100vh - 900px - 200px ) : 0px;
+  }
+}
+
 
 @media screen and (min-width: 368px) and (max-width: 767px) {
     .info-break-policy {

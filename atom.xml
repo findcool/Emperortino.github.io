@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://forfun.tech/"/>
-  <updated>2020-06-02T15:19:02.828Z</updated>
+  <updated>2020-06-12T09:20:00.604Z</updated>
   <id>https://forfun.tech/</id>
   
   <author>
@@ -15,6 +15,120 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>DNS部署与安全</title>
+    <link href="https://forfun.tech/2020/06/12/dns-bu-shu-yu-an-quan/"/>
+    <id>https://forfun.tech/2020/06/12/dns-bu-shu-yu-an-quan/</id>
+    <published>2020-06-12T08:22:11.000Z</published>
+    <updated>2020-06-12T09:20:00.604Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;blockquote&gt;
+&lt;p&gt;网安个人学习&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&quot;DNS部署与安全&quot;&gt;&lt;a href=&quot;#DNS部署与安全&quot; class=&quot;headerlink&quot; title=&quot;DNS部署与安全&quot;&gt;&lt;/a&gt;DNS部署与安全&lt;/h2&gt;&lt;h3
+        
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>DHCP部署与安全</title>
+    <link href="https://forfun.tech/2020/06/10/dhcp-bu-shu-yu-an-quan/"/>
+    <id>https://forfun.tech/2020/06/10/dhcp-bu-shu-yu-an-quan/</id>
+    <published>2020-06-10T07:18:23.000Z</published>
+    <updated>2020-06-12T08:21:25.557Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;blockquote&gt;
+&lt;p&gt;网安个人学习&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&quot;DHCP部署与安全&quot;&gt;&lt;a href=&quot;#DHCP部署与安全&quot; class=&quot;headerlink&quot; title=&quot;DHCP部署与安全&quot;&gt;&lt;/a&gt;DHCP部署与安全&lt;/h2&gt;&lt;h3
+        
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>编译原理</title>
+    <link href="https://forfun.tech/2020/06/06/bian-yi-yuan-li/"/>
+    <id>https://forfun.tech/2020/06/06/bian-yi-yuan-li/</id>
+    <published>2020-06-06T09:37:58.000Z</published>
+    <updated>2020-06-08T16:03:27.951Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;blockquote&gt;
+&lt;p&gt;个人学习笔记&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&quot;1-文法的定义&quot;&gt;&lt;a href=&quot;#1-文法的定义&quot; class=&quot;headerlink&quot; title=&quot;1.文法的定义&quot;&gt;&lt;/a&gt;1.文法的定义&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;文
+        
+      
+    
+    </summary>
+    
+    
+      <category term="学习" scheme="https://forfun.tech/categories/%E5%AD%A6%E4%B9%A0/"/>
+    
+    
+      <category term="编译原理" scheme="https://forfun.tech/tags/%E7%BC%96%E8%AF%91%E5%8E%9F%E7%90%86/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Python学习</title>
+    <link href="https://forfun.tech/2020/06/04/python-xue-xi/"/>
+    <id>https://forfun.tech/2020/06/04/python-xue-xi/</id>
+    <published>2020-06-04T04:10:55.000Z</published>
+    <updated>2020-06-05T11:05:03.261Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;Python-Tkinter&quot;&gt;&lt;a href=&quot;#Python-Tkinter&quot; class=&quot;headerlink&quot; title=&quot;Python Tkinter&quot;&gt;&lt;/a&gt;Python Tkinter&lt;/h1&gt;&lt;p&gt;Python
+        
+      
+    
+    </summary>
+    
+    
+      <category term="学习" scheme="https://forfun.tech/categories/%E5%AD%A6%E4%B9%A0/"/>
+    
+    
+      <category term="python" scheme="https://forfun.tech/tags/python/"/>
+    
+      <category term="编程" scheme="https://forfun.tech/tags/%E7%BC%96%E7%A8%8B/"/>
+    
+      <category term="Tkinter" scheme="https://forfun.tech/tags/Tkinter/"/>
+    
+  </entry>
   
   <entry>
     <title>Markdown</title>
@@ -52,7 +166,7 @@
     <link href="https://forfun.tech/2020/06/02/matery-mo-gai/"/>
     <id>https://forfun.tech/2020/06/02/matery-mo-gai/</id>
     <published>2020-06-02T09:30:21.000Z</published>
-    <updated>2020-06-02T13:34:02.613Z</updated>
+    <updated>2020-06-11T03:51:13.867Z</updated>
     
     <summary type="html">
     
@@ -196,9 +310,9 @@
       <category term="教程" scheme="https://forfun.tech/categories/%E6%95%99%E7%A8%8B/"/>
     
     
-      <category term="Sandboxie" scheme="https://forfun.tech/tags/Sandboxie/"/>
-    
       <category term="破解" scheme="https://forfun.tech/tags/%E7%A0%B4%E8%A7%A3/"/>
+    
+      <category term="Sandboxie" scheme="https://forfun.tech/tags/Sandboxie/"/>
     
   </entry>
   
@@ -260,9 +374,9 @@
       <category term="教程" scheme="https://forfun.tech/categories/%E6%95%99%E7%A8%8B/"/>
     
     
-      <category term="破解" scheme="https://forfun.tech/tags/%E7%A0%B4%E8%A7%A3/"/>
-    
       <category term="JET-BRAINS" scheme="https://forfun.tech/tags/JET-BRAINS/"/>
+    
+      <category term="破解" scheme="https://forfun.tech/tags/%E7%A0%B4%E8%A7%A3/"/>
     
   </entry>
   
