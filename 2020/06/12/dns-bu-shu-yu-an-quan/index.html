@@ -598,21 +598,21 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2020-06-12
+                    2020-06-14
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    172
+                    1.4k
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    1 分
+                    5 分
                 </div>
                 
 
@@ -652,6 +652,184 @@ www为主机名
 FQDN = 主机名.DNS后缀
 
 FQDN （完整合格的域名）</code></pre>
+<h3 id="3-监听端口"><a href="#3-监听端口" class="headerlink" title="3.监听端口"></a>3.监听端口</h3><pre class=" language-端口"><code class="language-端口">TCP53
+
+UDP53</code></pre>
+<h3 id="4-DNS解析种类"><a href="#4-DNS解析种类" class="headerlink" title="4.DNS解析种类"></a>4.DNS解析种类</h3><pre class=" language-解析种类"><code class="language-解析种类">1) 递归查询：客户机与本地DNS之间
+
+2) 迭代查询：本地DNS服务器与根等其它DNS服务器的解析过程</code></pre>
+<p>迭代解析中，根域绝对不能切断</p>
+<h4 id="4-1-按照查询内容分类"><a href="#4-1-按照查询内容分类" class="headerlink" title="4.1 按照查询内容分类"></a>4.1 按照查询内容分类</h4><p>​    1 ）正向解析：已知域名，解析ip地址</p>
+<p>​    2 ）反向解析：一直IP地址，解析域名</p>
+<h3 id="5-域名解析记录类型"><a href="#5-域名解析记录类型" class="headerlink" title="5.域名解析记录类型"></a>5.域名解析记录类型</h3><ul>
+<li>A记录：正向解析</li>
+<li>CNAME记录：别名</li>
+<li>PTR记录：反向解析记录</li>
+<li>MX：邮箱交换记录</li>
+<li>NS：域名服务器解析</li>
+</ul>
+<h3 id="5-反向DNS"><a href="#5-反向DNS" class="headerlink" title="5.反向DNS"></a>5.反向DNS</h3><p>​    nslookup手工解析时，会解析反向解析</p>
+<h3 id="6-DNS服务器种类"><a href="#6-DNS服务器种类" class="headerlink" title="6.DNS服务器种类"></a>6.DNS服务器种类</h3><ul>
+<li><p>主要名称服务器</p>
+</li>
+<li><p>辅助名称服务器</p>
+</li>
+<li><p>根名称服务器</p>
+</li>
+<li><p>高速缓存服务器</p>
+</li>
+</ul>
+<h3 id="7-客户机域名请求解析的顺序"><a href="#7-客户机域名请求解析的顺序" class="headerlink" title="7.客户机域名请求解析的顺序"></a>7.客户机域名请求解析的顺序</h3><p>DNS解析-&gt;本地hosts文件-&gt;本地DNS服务器</p>
+<h3 id="8-服务器对于域名的处理顺序"><a href="#8-服务器对于域名的处理顺序" class="headerlink" title="8.服务器对于域名的处理顺序"></a>8.服务器对于域名的处理顺序</h3><p>DNS高速缓存-&gt;本地区域缓存文件-&gt;转发器-&gt;根</p>
+<h3 id="主要命令"><a href="#主要命令" class="headerlink" title="主要命令"></a>主要命令</h3><pre class=" language-cmd"><code class="language-cmd">ipconfig
+
+ipconfig /all
+
+ipconfig /release
+
+ipconfig /renew
+
+ipconfig /displaydns
+
+ipconfig /flushdns</code></pre>
+<hr>
+
+<h3 id="实验一"><a href="#实验一" class="headerlink" title="实验一"></a>实验一</h3><p>DNS搭建与解析</p>
+<h4 id="1-首先固定IP"><a href="#1-首先固定IP" class="headerlink" title="1. 首先固定IP"></a>1. 首先固定IP</h4><h4 id="2-安装DNS组件"><a href="#2-安装DNS组件" class="headerlink" title="2. 安装DNS组件"></a>2. 安装DNS组件</h4><p><img src="https://res.cloudinary.com/valent/image/upload/v1592041129/Blog/%E7%BD%91%E7%BB%9C%E5%B7%A5%E7%A8%8B/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8/DNS/1.png" alt="DNS组件"></p>
+<h4 id="3-Windows组件安装-gt-双击网络服务-gt-域名系统（DNS）勾选，下一步-完成"><a href="#3-Windows组件安装-gt-双击网络服务-gt-域名系统（DNS）勾选，下一步-完成" class="headerlink" title="3. Windows组件安装-&gt;双击网络服务-&gt;域名系统（DNS）勾选，下一步 完成"></a>3. Windows组件安装-&gt;双击网络服务-&gt;域名系统（DNS）勾选，下一步 完成</h4><h4 id="4-弹出如下："><a href="#4-弹出如下：" class="headerlink" title="4. 弹出如下："></a>4. 弹出如下：</h4><p>将D盘改为E盘</p>
+<p><img src="https://res.cloudinary.com/valent/image/upload/v1592041129/Blog/%E7%BD%91%E7%BB%9C%E5%B7%A5%E7%A8%8B/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8/DNS/2.png" alt="所需文件"></p>
+<h4 id="5-修改为如下："><a href="#5-修改为如下：" class="headerlink" title="5. 修改为如下："></a>5. 修改为如下：</h4><p>修改两次，之后确定</p>
+<p><img src="https://res.cloudinary.com/valent/image/upload/v1592041129/Blog/%E7%BD%91%E7%BB%9C%E5%B7%A5%E7%A8%8B/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8/DNS/3.png" alt="修改"></p>
+<h4 id="6-安装完成"><a href="#6-安装完成" class="headerlink" title="6. 安装完成"></a>6. 安装完成</h4><p><img src="https://res.cloudinary.com/valent/image/upload/v1592041129/Blog/%E7%BD%91%E7%BB%9C%E5%B7%A5%E7%A8%8B/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8/DNS/4.png" alt="DNS安装完成"></p>
+<h4 id="7-端口：UDP53出现（已经成功配置DNS服务器）"><a href="#7-端口：UDP53出现（已经成功配置DNS服务器）" class="headerlink" title="7. 端口：UDP53出现（已经成功配置DNS服务器）"></a>7. 端口：UDP53出现（已经成功配置DNS服务器）</h4><p><img src="https://res.cloudinary.com/valent/image/upload/v1592041129/Blog/%E7%BD%91%E7%BB%9C%E5%B7%A5%E7%A8%8B/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8/DNS/5.png" alt="UDP53"></p>
+<pre class=" language-注意"><code class="language-注意">1.当前这个DNS服务器只是安装完成，并未进行任何操作，只是打开服务
+
+2.刚搭建DNS服务器无缓存
+
+3.只要搭建好就已经形成了完整的DNS服务器--缓存服务器（什么都不放）
+</code></pre>
+<h4 id="8-新建正向查找区域-gt-主要区域-主服务器与备份服务器-gt-区域名称-gt-区域文件-gt-动态更新（学AD才用到，现在保持不变）"><a href="#8-新建正向查找区域-gt-主要区域-主服务器与备份服务器-gt-区域名称-gt-区域文件-gt-动态更新（学AD才用到，现在保持不变）" class="headerlink" title="8. 新建正向查找区域-&gt;主要区域(主服务器与备份服务器)-&gt;区域名称-&gt;区域文件-&gt;动态更新（学AD才用到，现在保持不变）"></a>8. 新建正向查找区域-&gt;主要区域(主服务器与备份服务器)-&gt;区域名称-&gt;区域文件-&gt;动态更新（学AD才用到，现在保持不变）</h4><p><img src="https://res.cloudinary.com/valent/image/upload/v1592041129/Blog/%E7%BD%91%E7%BB%9C%E5%B7%A5%E7%A8%8B/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8/DNS/6.png" alt="新建区域"></p>
+<p><img src="https://res.cloudinary.com/valent/image/upload/v1592041129/Blog/%E7%BD%91%E7%BB%9C%E5%B7%A5%E7%A8%8B/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8/DNS/7.png" alt="主要区域"></p>
+<p>就是告诉别人，这才是权威区域！</p>
+<p><img src="https://res.cloudinary.com/valent/image/upload/v1592041129/Blog/%E7%BD%91%E7%BB%9C%E5%B7%A5%E7%A8%8B/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8/DNS/8.png" alt="区域名称"></p>
+<p>区域文件：专门用来解析<code>域名</code>结尾的正向解析文件，如：</p>
+<pre class=" language-例子"><code class="language-例子">pan.域名
+
+music.域名</code></pre>
+<p>都解析到这个文件里面</p>
+<p><img src="https://res.cloudinary.com/valent/image/upload/v1592041129/Blog/%E7%BD%91%E7%BB%9C%E5%B7%A5%E7%A8%8B/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8/DNS/9.png" alt="区域文件"></p>
+<h4 id="9-新建完成"><a href="#9-新建完成" class="headerlink" title="9. 新建完成"></a>9. 新建完成</h4><p><img src="https://res.cloudinary.com/valent/image/upload/v1592041129/Blog/%E7%BD%91%E7%BB%9C%E5%B7%A5%E7%A8%8B/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8/DNS/10.png" alt="创建完成"></p>
+<h4 id="10-权威服务器SOA-起始授权机构-，全球唯一的"><a href="#10-权威服务器SOA-起始授权机构-，全球唯一的" class="headerlink" title="10. 权威服务器SOA(起始授权机构)，全球唯一的"></a>10. <code>权威服务器SOA</code>(起始授权机构)，全球唯一的</h4><p><img src="https://res.cloudinary.com/valent/image/upload/v1592041129/Blog/%E7%BD%91%E7%BB%9C%E5%B7%A5%E7%A8%8B/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8/DNS/11.png" alt="SOA"></p>
+<h4 id="11-名称服务器-NS-负责该域名解析的服务器"><a href="#11-名称服务器-NS-负责该域名解析的服务器" class="headerlink" title="11. 名称服务器(NS)`:负责该域名解析的服务器"></a>11. 名称服务器(NS)`:负责该域名解析的服务器</h4><p><img src="https://res.cloudinary.com/valent/image/upload/v1592041129/Blog/%E7%BD%91%E7%BB%9C%E5%B7%A5%E7%A8%8B/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8/DNS/12.png" alt="NS"></p>
+<h4 id="12-右键-gt-新建主机（用来解析）"><a href="#12-右键-gt-新建主机（用来解析）" class="headerlink" title="12. 右键-&gt;新建主机（用来解析）"></a>12. 右键-&gt;新建主机（用来解析）</h4><p><img src="https://res.cloudinary.com/valent/image/upload/v1592041129/Blog/%E7%BD%91%E7%BB%9C%E5%B7%A5%E7%A8%8B/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8/DNS/13.png" alt="解析"></p>
+<p><img src="https://res.cloudinary.com/valent/image/upload/v1592041129/Blog/%E7%BD%91%E7%BB%9C%E5%B7%A5%E7%A8%8B/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8/DNS/14.png" alt="主机"></p>
+<h4 id="13-未正常配置"><a href="#13-未正常配置" class="headerlink" title="13. 未正常配置"></a>13. 未正常配置</h4><p><img src="https://res.cloudinary.com/valent/image/upload/v1592041129/Blog/%E7%BD%91%E7%BB%9C%E5%B7%A5%E7%A8%8B/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8/DNS/15.png" alt="失败"></p>
+<h4 id="14-手动进行配置，来进行测试"><a href="#14-手动进行配置，来进行测试" class="headerlink" title="14. 手动进行配置，来进行测试"></a>14. 手动进行配置，来进行测试</h4><p><img src="https://res.cloudinary.com/valent/image/upload/v1592041129/Blog/%E7%BD%91%E7%BB%9C%E5%B7%A5%E7%A8%8B/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8/DNS/16.png" alt="手动"></p>
+<pre class=" language-测试"><code class="language-测试">nslookup www.baidu.com
+
+显示解析地址为我们之前配置的IP</code></pre>
+<p><img src="https://res.cloudinary.com/valent/image/upload/v1592041129/Blog/%E7%BD%91%E7%BB%9C%E5%B7%A5%E7%A8%8B/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8/DNS/17.png" alt="解析成功"></p>
+<p>ping测试</p>
+<p><img src="https://res.cloudinary.com/valent/image/upload/v1592041129/Blog/%E7%BD%91%E7%BB%9C%E5%B7%A5%E7%A8%8B/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8/DNS/18.png" alt="PING"></p>
+<p>显示IP说明配置成功，但是不在同一网段，所以无法ping通</p>
+<h4 id="15-清空本地DNS缓存"><a href="#15-清空本地DNS缓存" class="headerlink" title="15. 清空本地DNS缓存"></a>15. 清空本地DNS缓存</h4><p>做测试留下的缓存，如果不清空就无法上午，所以使用完需要刷新</p>
+<p><img src="https://res.cloudinary.com/valent/image/upload/v1592041129/Blog/%E7%BD%91%E7%BB%9C%E5%B7%A5%E7%A8%8B/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8/DNS/19.png" alt="显示缓存"></p>
+<pre class=" language-cmd"><code class="language-cmd">ipconfig /flushdns 
+
+清空DNS缓存</code></pre>
+<pre class=" language-cmd"><code class="language-cmd">ipconfig /displaydns
+
+显示DNS缓存</code></pre>
+<p><img src="https://res.cloudinary.com/valent/image/upload/v1592041129/Blog/%E7%BD%91%E7%BB%9C%E5%B7%A5%E7%A8%8B/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8/DNS/20.png" alt="显示缓存"></p>
+<hr>
+
+<h3 id="实验二"><a href="#实验二" class="headerlink" title="实验二"></a>实验二</h3><p>反向解析</p>
+<p>Server:Unknown</p>
+<h4 id="1-消除Server-Unknown"><a href="#1-消除Server-Unknown" class="headerlink" title="1. 消除Server:Unknown"></a>1. 消除Server:Unknown</h4><p><img src="https://res.cloudinary.com/valent/image/upload/v1592041129/Blog/%E7%BD%91%E7%BB%9C%E5%B7%A5%E7%A8%8B/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8/DNS/21.png" alt="Unknown"></p>
+<p>首先是访问服务器，然后询问它的名字，当访问三次没响应时，进行下一步，访问网址IP</p>
+<h4 id="2-新建主机：dns1"><a href="#2-新建主机：dns1" class="headerlink" title="2. 新建主机：dns1"></a>2. 新建主机：dns1</h4><p><img src="https://res.cloudinary.com/valent/image/upload/v1592041129/Blog/%E7%BD%91%E7%BB%9C%E5%B7%A5%E7%A8%8B/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8/DNS/22.png" alt="dns1"></p>
+<p>缺少反向，无法创建</p>
+<p><img src="https://res.cloudinary.com/valent/image/upload/v1592041129/Blog/%E7%BD%91%E7%BB%9C%E5%B7%A5%E7%A8%8B/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8/DNS/23.png" alt="失败"></p>
+<h4 id="3-创建反向查找区域，之后一直下一步，直到完成"><a href="#3-创建反向查找区域，之后一直下一步，直到完成" class="headerlink" title="3. 创建反向查找区域，之后一直下一步，直到完成"></a>3. 创建反向查找区域，之后一直下一步，直到完成</h4><p>主机IP为： 10.1.1.0，所以识别网络填写为：10.1.1._</p>
+<p><img src="https://res.cloudinary.com/valent/image/upload/v1592041129/Blog/%E7%BD%91%E7%BB%9C%E5%B7%A5%E7%A8%8B/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8/DNS/24.png" alt="反向查找区域"></p>
+<h4 id="4-反向查找区域-》新建PTR"><a href="#4-反向查找区域-》新建PTR" class="headerlink" title="4. 反向查找区域-》新建PTR"></a>4. 反向查找区域-》新建PTR</h4><p><img src="https://res.cloudinary.com/valent/image/upload/v1592041129/Blog/%E7%BD%91%E7%BB%9C%E5%B7%A5%E7%A8%8B/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8/DNS/25.png" alt="新建"></p>
+<p>将10.1.1.1 解析到 dns1.baidu.com</p>
+<p><img src="https://res.cloudinary.com/valent/image/upload/v1592041129/Blog/%E7%BD%91%E7%BB%9C%E5%B7%A5%E7%A8%8B/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8/DNS/26.png" alt="选择"></p>
+<p><img src="https://res.cloudinary.com/valent/image/upload/v1592041129/Blog/%E7%BD%91%E7%BB%9C%E5%B7%A5%E7%A8%8B/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8/DNS/27.png" alt="IP"></p>
+<h4 id="5-进入XP进行测试"><a href="#5-进入XP进行测试" class="headerlink" title="5. 进入XP进行测试"></a>5. 进入XP进行测试</h4><p>显示server: dnsl.baidu.com</p>
+<p><img src="https://res.cloudinary.com/valent/image/upload/v1592041129/Blog/%E7%BD%91%E7%BB%9C%E5%B7%A5%E7%A8%8B/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8/DNS/28.png" alt="测试"></p>
+<hr>
+
+<h3 id="实验三"><a href="#实验三" class="headerlink" title="实验三"></a>实验三</h3><p>虚拟机上网</p>
+<h4 id="1-确定真实机是有线还是无线"><a href="#1-确定真实机是有线还是无线" class="headerlink" title="1. 确定真实机是有线还是无线"></a>1. 确定真实机是有线还是无线</h4><h4 id="2-编辑-》虚拟网路编辑器-》更改设置"><a href="#2-编辑-》虚拟网路编辑器-》更改设置" class="headerlink" title="2. 编辑-》虚拟网路编辑器-》更改设置"></a>2. 编辑-》虚拟网路编辑器-》更改设置</h4><p>更具情况选择使用</p>
+<p>配置V0</p>
+<p><img src="https://res.cloudinary.com/valent/image/upload/v1592064087/Blog/%E7%BD%91%E7%BB%9C%E5%B7%A5%E7%A8%8B/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8/DNS/29.png" alt="桥接"></p>
+<h4 id="3-桥接到V0"><a href="#3-桥接到V0" class="headerlink" title="3. 桥接到V0"></a>3. 桥接到V0</h4><p>此时还不一定能上网</p>
+<h4 id="4-释放地址"><a href="#4-释放地址" class="headerlink" title="4. 释放地址"></a>4. 释放地址</h4><p>全部自动</p>
+<p>然后停用本地连接后，再启动</p>
+<p><img src="https://res.cloudinary.com/valent/image/upload/v1592041129/Blog/%E7%BD%91%E7%BB%9C%E5%B7%A5%E7%A8%8B/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8/DNS/30.png" alt="真实机获取的IP"></p>
+<h4 id="5-可以清空一下缓存"><a href="#5-可以清空一下缓存" class="headerlink" title="5. 可以清空一下缓存"></a>5. 可以清空一下缓存</h4><p>可以清空两次</p>
+<p><img src="https://res.cloudinary.com/valent/image/upload/v1592041129/Blog/%E7%BD%91%E7%BB%9C%E5%B7%A5%E7%A8%8B/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8/DNS/31.png" alt="清空缓存"></p>
+<h4 id="6-进行ping测试"><a href="#6-进行ping测试" class="headerlink" title="6. 进行ping测试"></a>6. 进行ping测试</h4><p><img src="https://res.cloudinary.com/valent/image/upload/v1592041129/Blog/%E7%BD%91%E7%BB%9C%E5%B7%A5%E7%A8%8B/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8/DNS/32.png" alt="测试"></p>
+<p>测试成功，可以成功上网</p>
+<hr>
+
+<h3 id="实验四"><a href="#实验四" class="headerlink" title="实验四"></a>实验四</h3><p>DNS备份</p>
+<h4 id="1-配置另一台DNS服务器"><a href="#1-配置另一台DNS服务器" class="headerlink" title="1. 配置另一台DNS服务器"></a>1. 配置另一台DNS服务器</h4><p>安装DNS同实验一</p>
+<p>则此时有 WIN2003-1(主DNS服务器) 与win2003-2(本分服务器)</p>
+<h4 id="2-先在主服务器操作"><a href="#2-先在主服务器操作" class="headerlink" title="2. 先在主服务器操作"></a>2. 先在主服务器操作</h4><p>主要区域服务器</p>
+<p><img src="https://res.cloudinary.com/valent/image/upload/v1592041129/Blog/%E7%BD%91%E7%BB%9C%E5%B7%A5%E7%A8%8B/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8/DNS/33.png" alt="主要区域服务器"></p>
+<p>点击属性</p>
+<h4 id="3-区域复制"><a href="#3-区域复制" class="headerlink" title="3. 区域复制"></a>3. 区域复制</h4><p>添加复制到的服务器,此时复制到10.1.1.2（当前为10.1.1.1）</p>
+<p><img src="https://res.cloudinary.com/valent/image/upload/v1592041129/Blog/%E7%BD%91%E7%BB%9C%E5%B7%A5%E7%A8%8B/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8/DNS/34.png" alt="复制"></p>
+<h4 id="4-同步区域"><a href="#4-同步区域" class="headerlink" title="4. 同步区域"></a>4. 同步区域</h4><p>正向查找区域-&gt;新建区域-&gt;辅助区域（用于备份）-&gt;备份名（qq.com）-&gt;备份IP（10.1.1.1）</p>
+<p><img src="https://res.cloudinary.com/valent/image/upload/v1592041129/Blog/%E7%BD%91%E7%BB%9C%E5%B7%A5%E7%A8%8B/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8/DNS/35.png" alt="备份区域"></p>
+<p><img src="https://res.cloudinary.com/valent/image/upload/v1592041129/Blog/%E7%BD%91%E7%BB%9C%E5%B7%A5%E7%A8%8B/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8/DNS/36.png" alt="备份IP"></p>
+<p><img src="https://res.cloudinary.com/valent/image/upload/v1592041129/Blog/%E7%BD%91%E7%BB%9C%E5%B7%A5%E7%A8%8B/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8/DNS/37.png" alt="备份完成"></p>
+<h4 id="5-完成"><a href="#5-完成" class="headerlink" title="5. 完成"></a>5. 完成</h4><p><img src="https://res.cloudinary.com/valent/image/upload/v1592041129/Blog/%E7%BD%91%E7%BB%9C%E5%B7%A5%E7%A8%8B/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8/DNS/38.png" alt="备份完成"></p>
+<hr>
+
+<h3 id="实验五"><a href="#实验五" class="headerlink" title="实验五"></a>实验五</h3><ul>
+<li>xp模拟客户机 </li>
+<li>Win2003-1模拟公司DNS服务器  </li>
+<li>Win2003-2模拟互联网DNS服务器</li>
+</ul>
+<ol>
+<li><p>Win2003-2创建jd.com</p>
+</li>
+<li><p>新建主机</p>
+<p>2.2.2.2</p>
+<p><img src="https://res.cloudinary.com/valent/image/upload/v1592041129/Blog/%E7%BD%91%E7%BB%9C%E5%B7%A5%E7%A8%8B/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8/DNS/39.png" alt="新建主机"></p>
+</li>
+<li><p>去可客户机解析，发现解析失败</p>
+<p>公司服务器解析失败，则需要转发给别人做（甩锅）</p>
+</li>
+</ol>
+<p><img src="https://res.cloudinary.com/valent/image/upload/v1592041129/Blog/%E7%BD%91%E7%BB%9C%E5%B7%A5%E7%A8%8B/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8/DNS/40.png" alt="解析失败"></p>
+<ol start="4">
+<li><p>去公司服务器配置转发器</p>
+<p>甩锅给可以解析的服务器（互联网DNS）</p>
+</li>
+</ol>
+<p><img src="https://res.cloudinary.com/valent/image/upload/v1592041129/Blog/%E7%BD%91%E7%BB%9C%E5%B7%A5%E7%A8%8B/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8/DNS/41.png" alt="转发器"></p>
+<ol start="5">
+<li><p>配置成功</p>
+<p><img src="https://res.cloudinary.com/valent/image/upload/v1592041129/Blog/%E7%BD%91%E7%BB%9C%E5%B7%A5%E7%A8%8B/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8/DNS/42.png" alt="成功"></p>
+</li>
+</ol>
+<hr>
+
+<h3 id="实验六"><a href="#实验六" class="headerlink" title="实验六"></a>实验六</h3><p>设置别名-CNAME（给域名取别名）</p>
+<ol>
+<li><p>域名新建别名</p>
+<p><img src="https://res.cloudinary.com/valent/image/upload/v1592041129/Blog/%E7%BD%91%E7%BB%9C%E5%B7%A5%E7%A8%8B/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8/DNS/43.png" alt="创建别名"></p>
+<p><img src="https://res.cloudinary.com/valent/image/upload/v1592041129/Blog/%E7%BD%91%E7%BB%9C%E5%B7%A5%E7%A8%8B/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8/DNS/44.png" alt="别名"></p>
+<p><img src="https://res.cloudinary.com/valent/image/upload/v1592041129/Blog/%E7%BD%91%E7%BB%9C%E5%B7%A5%E7%A8%8B/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8/DNS/45.png" alt="创建完成"></p>
+</li>
+<li><p>客户机测试</p>
+<p><img src="https://res.cloudinary.com/valent/image/upload/v1592041129/Blog/%E7%BD%91%E7%BB%9C%E5%B7%A5%E7%A8%8B/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8/DNS/46.png" alt="测试完成"></p>
+</li>
+</ol>
 
             </div>
             <hr/>
@@ -1143,36 +1321,32 @@ FQDN （完整合格的域名）</code></pre>
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="far fa-dot-circle"></i>&nbsp;本篇
-            </div>
+                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2020/06/12/dns-bu-shu-yu-an-quan/">
+                <a href="/2020/06/12/xue-xi-da-qia/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/18.jpg" class="responsive-img" alt="DNS部署与安全">
+                        <img src="/medias/featureimages/8.jpg" class="responsive-img" alt="学习打卡">
                         
-                        <span class="card-title">DNS部署与安全</span>
+                        <span class="card-title">学习打卡</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
                             
-网安个人学习
+自学打卡欢迎一起
 
-DNS部署与安全1.DNSDomain Name Services
-域名服务
-作用：为客户机提供域名解析服务器
-2.域名组成2.1 域名组成概述如”“为一个域名，严格来说：baidu.com”才是一个域名（唯一）,”www
+
                         
                     </div>
                     <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2020-06-12
-                            </span>
+                        <span class="publish-date">
+                            <i class="far fa-clock fa-fw icon-date"></i>2020-06-12
+                        </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-user fa-fw"></i>
@@ -1181,7 +1355,6 @@ DNS部署与安全1.DNSDomain Name Services
                         </span>
                     </div>
                 </div>
-
                 
             </div>
         </div>
@@ -1471,7 +1644,7 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">10.6k</span>&nbsp;字
+                class="white-color">31.5k</span>&nbsp;字
             
             
             

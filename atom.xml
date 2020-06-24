@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://valent.club/"/>
-  <updated>2020-06-12T09:52:44.928Z</updated>
+  <updated>2020-06-24T16:08:07.590Z</updated>
   <id>https://valent.club/</id>
   
   <author>
@@ -17,11 +17,376 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>2.4正则表达式</title>
+    <link href="https://valent.club/2020/06/24/2-4-zheng-ze-biao-da-shi/"/>
+    <id>https://valent.club/2020/06/24/2-4-zheng-ze-biao-da-shi/</id>
+    <published>2020-06-24T12:02:32.000Z</published>
+    <updated>2020-06-24T16:08:07.590Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;blockquote&gt;
+&lt;p&gt;渗透测试&lt;/p&gt;
+&lt;p&gt;正则表达式&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h1 id=&quot;正则表达式&quot;&gt;&lt;a href=&quot;#正则表达式&quot; class=&quot;headerlink&quot; title=&quot;正则表达式&quot;&gt;&lt;/a&gt;正则表达式&lt;/h1&gt;&lt;h2
+        
+      
+    
+    </summary>
+    
+    
+      <category term="渗透测试" scheme="https://valent.club/categories/%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95/"/>
+    
+    
+      <category term="笔记" scheme="https://valent.club/tags/%E7%AC%94%E8%AE%B0/"/>
+    
+      <category term="正则表达式" scheme="https://valent.club/tags/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>2.3后端基础PHP（二）</title>
+    <link href="https://valent.club/2020/06/21/2-3-hou-duan-ji-chu-php-er/"/>
+    <id>https://valent.club/2020/06/21/2-3-hou-duan-ji-chu-php-er/</id>
+    <published>2020-06-21T09:29:59.000Z</published>
+    <updated>2020-06-24T11:52:19.181Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;blockquote&gt;
+&lt;p&gt;渗透测试&lt;/p&gt;
+&lt;p&gt;PHP学习&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h1 id=&quot;后端基础PHP&quot;&gt;&lt;a href=&quot;#后端基础PHP&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="渗透测试" scheme="https://valent.club/categories/%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95/"/>
+    
+    
+      <category term="笔记" scheme="https://valent.club/tags/%E7%AC%94%E8%AE%B0/"/>
+    
+      <category term="PHP" scheme="https://valent.club/tags/PHP/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>2.3后端基础PHP</title>
+    <link href="https://valent.club/2020/06/20/2-3-hou-duan-ji-chu-php/"/>
+    <id>https://valent.club/2020/06/20/2-3-hou-duan-ji-chu-php/</id>
+    <published>2020-06-20T09:05:00.000Z</published>
+    <updated>2020-06-24T11:54:21.706Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;blockquote&gt;
+&lt;p&gt;渗透测试&lt;/p&gt;
+&lt;p&gt;PHP学习&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h1 id=&quot;后端基础PHP&quot;&gt;&lt;a href=&quot;#后端基础PHP&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="渗透测试" scheme="https://valent.club/categories/%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95/"/>
+    
+    
+      <category term="笔记" scheme="https://valent.club/tags/%E7%AC%94%E8%AE%B0/"/>
+    
+      <category term="PHP" scheme="https://valent.club/tags/PHP/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Kali-3.2SQLmap获取管理员权限</title>
+    <link href="https://valent.club/2020/06/19/kali-3-2sqlmap-huo-qu-guan-li-yuan-quan-xian/"/>
+    <id>https://valent.club/2020/06/19/kali-3-2sqlmap-huo-qu-guan-li-yuan-quan-xian/</id>
+    <published>2020-06-19T07:05:47.000Z</published>
+    <updated>2020-06-19T07:11:55.129Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;blockquote&gt;
+&lt;p&gt;kali渗透&lt;/p&gt;
+&lt;p&gt;sqlmap&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h1 id=&quot;1-SQLmap获取管理员权限&quot;&gt;&lt;a href=&quot;#1-SQLmap获取管理员权限&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>2.2后端基础SQL-数据库</title>
+    <link href="https://valent.club/2020/06/18/2-2-hou-duan-ji-chu-sql-shu-ju-ku/"/>
+    <id>https://valent.club/2020/06/18/2-2-hou-duan-ji-chu-sql-shu-ju-ku/</id>
+    <published>2020-06-18T09:23:06.000Z</published>
+    <updated>2020-06-24T12:01:03.471Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;blockquote&gt;
+&lt;p&gt;渗透测试&lt;/p&gt;
+&lt;p&gt;SQL-数据库&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h1 id=&quot;1-数据库基础&quot;&gt;&lt;a href=&quot;#1-数据库基础&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="渗透测试" scheme="https://valent.club/categories/%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95/"/>
+    
+    
+      <category term="笔记" scheme="https://valent.club/tags/%E7%AC%94%E8%AE%B0/"/>
+    
+      <category term="Mysql" scheme="https://valent.club/tags/Mysql/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>2.1前端基础</title>
+    <link href="https://valent.club/2020/06/18/2-1-qian-duan-ji-chu/"/>
+    <id>https://valent.club/2020/06/18/2-1-qian-duan-ji-chu/</id>
+    <published>2020-06-18T08:24:19.000Z</published>
+    <updated>2020-06-20T09:10:44.239Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;blockquote&gt;
+&lt;p&gt;渗透测试&lt;/p&gt;
+&lt;p&gt;前端基础&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h1 id=&quot;前端基础&quot;&gt;&lt;a href=&quot;#前端基础&quot; class=&quot;headerlink&quot; title=&quot;前端基础&quot;&gt;&lt;/a&gt;前端基础&lt;/h1&gt;&lt;h2
+        
+      
+    
+    </summary>
+    
+    
+      <category term="渗透测试" scheme="https://valent.club/categories/%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95/"/>
+    
+    
+      <category term="笔记" scheme="https://valent.club/tags/%E7%AC%94%E8%AE%B0/"/>
+    
+      <category term="前端" scheme="https://valent.club/tags/%E5%89%8D%E7%AB%AF/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>渗透测试-信息收集</title>
+    <link href="https://valent.club/2020/06/18/shen-tou-ce-shi-xin-xi-shou-ji/"/>
+    <id>https://valent.club/2020/06/18/shen-tou-ce-shi-xin-xi-shou-ji/</id>
+    <published>2020-06-18T07:03:17.000Z</published>
+    <updated>2020-06-20T09:10:59.221Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;blockquote&gt;
+&lt;p&gt;渗透测试&lt;/p&gt;
+&lt;p&gt;信息收集 – 灵魂&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h1 id=&quot;信息收集&quot;&gt;&lt;a href=&quot;#信息收集&quot; class=&quot;headerlink&quot; title=&quot;信息收集&quot;&gt;&lt;/a&gt;信息收集&lt;/h1&gt;&lt;h2
+        
+      
+    
+    </summary>
+    
+    
+      <category term="渗透测试" scheme="https://valent.club/categories/%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95/"/>
+    
+    
+      <category term="笔记" scheme="https://valent.club/tags/%E7%AC%94%E8%AE%B0/"/>
+    
+      <category term="信息收集" scheme="https://valent.club/tags/%E4%BF%A1%E6%81%AF%E6%94%B6%E9%9B%86/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>1.1Web服务器通信原理</title>
+    <link href="https://valent.club/2020/06/17/1-1web-fu-wu-qi-tong-xin-yuan-li/"/>
+    <id>https://valent.club/2020/06/17/1-1web-fu-wu-qi-tong-xin-yuan-li/</id>
+    <published>2020-06-17T09:30:03.000Z</published>
+    <updated>2020-06-20T09:10:33.301Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;blockquote&gt;
+&lt;p&gt;渗透测试&lt;/p&gt;
+&lt;p&gt;Web服务器通信原理&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h1 id=&quot;Web服务器通信原理&quot;&gt;&lt;a href=&quot;#Web服务器通信原理&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="渗透测试" scheme="https://valent.club/categories/%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95/"/>
+    
+    
+      <category term="笔记" scheme="https://valent.club/tags/%E7%AC%94%E8%AE%B0/"/>
+    
+      <category term="Web" scheme="https://valent.club/tags/Web/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>1.2搭建Web测试环境</title>
+    <link href="https://valent.club/2020/06/17/1-2-da-jian-web-ce-shi-huan-jing/"/>
+    <id>https://valent.club/2020/06/17/1-2-da-jian-web-ce-shi-huan-jing/</id>
+    <published>2020-06-17T09:29:05.000Z</published>
+    <updated>2020-06-20T09:10:38.860Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;blockquote&gt;
+&lt;p&gt;渗透测试&lt;/p&gt;
+&lt;p&gt;搭建Web安全测试环境&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h1 id=&quot;搭建Web安全测试环境&quot;&gt;&lt;a href=&quot;#搭建Web安全测试环境&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="渗透测试" scheme="https://valent.club/categories/%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95/"/>
+    
+    
+      <category term="笔记" scheme="https://valent.club/tags/%E7%AC%94%E8%AE%B0/"/>
+    
+      <category term="Web" scheme="https://valent.club/tags/Web/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>域</title>
+    <link href="https://valent.club/2020/06/16/yu/"/>
+    <id>https://valent.club/2020/06/16/yu/</id>
+    <published>2020-06-16T09:20:03.000Z</published>
+    <updated>2020-06-17T07:25:00.870Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;blockquote&gt;
+&lt;p&gt;网安学习&lt;/p&gt;
+&lt;p&gt;域-Domain&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h1 id=&quot;域&quot;&gt;&lt;a href=&quot;#域&quot; class=&quot;headerlink&quot; title=&quot;域&quot;&gt;&lt;/a&gt;域&lt;/h1&gt;&lt;h3 id=&quot;1-基础知识&quot;&gt;&lt;a
+        
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>IIS服务器</title>
+    <link href="https://valent.club/2020/06/14/iis-fu-wu-qi/"/>
+    <id>https://valent.club/2020/06/14/iis-fu-wu-qi/</id>
+    <published>2020-06-14T07:54:04.000Z</published>
+    <updated>2020-06-16T09:12:59.801Z</updated>
+    
+    <summary type="html">
+    
+      &lt;blockquote&gt;
+&lt;p&gt;网安学习&lt;/p&gt;
+&lt;p&gt;IIS-Web服务器&lt;/p&gt;
+&lt;p&gt;IIS-FTP服务器&lt;/p&gt;
+&lt;/blockquote&gt;
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>学习打卡</title>
+    <link href="https://valent.club/2020/06/12/xue-xi-da-qia/"/>
+    <id>https://valent.club/2020/06/12/xue-xi-da-qia/</id>
+    <published>2020-06-12T13:27:48.000Z</published>
+    <updated>2020-06-12T13:28:36.683Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;blockquote&gt;
+&lt;p&gt;自学打卡&lt;br&gt;欢迎一起&lt;/p&gt;
+&lt;/blockquote&gt;
+
+        
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
     <title>DNS部署与安全</title>
     <link href="https://valent.club/2020/06/12/dns-bu-shu-yu-an-quan/"/>
     <id>https://valent.club/2020/06/12/dns-bu-shu-yu-an-quan/</id>
     <published>2020-06-12T08:22:11.000Z</published>
-    <updated>2020-06-12T09:52:44.928Z</updated>
+    <updated>2020-06-13T16:24:46.509Z</updated>
     
     <summary type="html">
     
@@ -166,7 +531,7 @@
     <link href="https://valent.club/2020/06/02/matery-mo-gai/"/>
     <id>https://valent.club/2020/06/02/matery-mo-gai/</id>
     <published>2020-06-02T09:30:21.000Z</published>
-    <updated>2020-06-11T03:51:13.867Z</updated>
+    <updated>2020-06-21T03:29:29.068Z</updated>
     
     <summary type="html">
     
@@ -251,132 +616,6 @@
     
     
       <category term="算法设计与分析" scheme="https://valent.club/tags/%E7%AE%97%E6%B3%95%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%88%86%E6%9E%90/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>算法设计与分析（一）</title>
-    <link href="https://valent.club/2020/06/01/suan-fa-she-ji-yu-fen-xi-yi/"/>
-    <id>https://valent.club/2020/06/01/suan-fa-she-ji-yu-fen-xi-yi/</id>
-    <published>2020-06-01T02:58:40.000Z</published>
-    <updated>2020-06-02T09:36:13.690Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;blockquote&gt;
-&lt;p&gt;算法与设计学习过程&lt;br&gt;坚持更新（使用JAVA语言）&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h1 id=&quot;递归：实现汉诺塔问题&quot;&gt;&lt;a href=&quot;#递归：实现汉诺塔问题&quot; class=&quot;headerlink&quot;
-        
-      
-    
-    </summary>
-    
-    
-      <category term="学习" scheme="https://valent.club/categories/%E5%AD%A6%E4%B9%A0/"/>
-    
-    
-      <category term="算法设计与分析" scheme="https://valent.club/tags/%E7%AE%97%E6%B3%95%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%88%86%E6%9E%90/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Sandboxie破解</title>
-    <link href="https://valent.club/2020/05/21/sandboxie-po-jie/"/>
-    <id>https://valent.club/2020/05/21/sandboxie-po-jie/</id>
-    <published>2020-05-21T07:00:25.000Z</published>
-    <updated>2020-06-02T09:36:04.831Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;blockquote&gt;
-&lt;p&gt;Sandboxie安装及破解&lt;br&gt;仅供学习使用,请支持正版！！！    &lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h2 id=&quot;Sandboxie-安装及破解&quot;&gt;&lt;a href=&quot;#Sandboxie-安装及破解&quot;
-        
-      
-    
-    </summary>
-    
-    
-      <category term="教程" scheme="https://valent.club/categories/%E6%95%99%E7%A8%8B/"/>
-    
-    
-      <category term="破解" scheme="https://valent.club/tags/%E7%A0%B4%E8%A7%A3/"/>
-    
-      <category term="Sandboxie" scheme="https://valent.club/tags/Sandboxie/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Linux学习（一）</title>
-    <link href="https://valent.club/2020/05/20/linux-xue-xi-yi/"/>
-    <id>https://valent.club/2020/05/20/linux-xue-xi-yi/</id>
-    <published>2020-05-20T02:59:25.000Z</published>
-    <updated>2020-06-02T09:35:57.540Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;blockquote&gt;
-&lt;p&gt;Linux学习过程&lt;br&gt;坚持更新  &lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h1 id=&quot;Linux系统安装（vm虚拟机安装）&quot;&gt;&lt;a href=&quot;#Linux系统安装（vm虚拟机安装）&quot; class=&quot;headerlink&quot;
-        
-      
-    
-    </summary>
-    
-    
-      <category term="学习" scheme="https://valent.club/categories/%E5%AD%A6%E4%B9%A0/"/>
-    
-    
-      <category term="操作系统" scheme="https://valent.club/tags/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/"/>
-    
-      <category term="Linux" scheme="https://valent.club/tags/Linux/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>JET-BRAINS 软件破解</title>
-    <link href="https://valent.club/2020/05/19/intellij-ruan-jian-po-jie/"/>
-    <id>https://valent.club/2020/05/19/intellij-ruan-jian-po-jie/</id>
-    <published>2020-05-19T06:59:25.000Z</published>
-    <updated>2020-06-02T09:35:52.405Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;blockquote&gt;
-&lt;p&gt;JET-BRAINS 软件破解教程&lt;br&gt;仅供学习使用，请支持正版！！！  &lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h1 id=&quot;JET-BRAINS软件永久破解（这里以IDEA为例子）&quot;&gt;&lt;a
-        
-      
-    
-    </summary>
-    
-    
-      <category term="教程" scheme="https://valent.club/categories/%E6%95%99%E7%A8%8B/"/>
-    
-    
-      <category term="JET-BRAINS" scheme="https://valent.club/tags/JET-BRAINS/"/>
-    
-      <category term="破解" scheme="https://valent.club/tags/%E7%A0%B4%E8%A7%A3/"/>
     
   </entry>
   
