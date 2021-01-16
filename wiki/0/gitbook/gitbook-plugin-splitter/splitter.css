@@ -1,0 +1,21 @@
+.divider-content-summary {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 10px;
+	display: table;
+	cursor: col-resize;
+    color: #ccc;
+    transition: all .5s ease
+}
+.divider-content-summary:hover {
+    color: #444;
+    background:rgba(110, 110, 110, 0.29);
+    transition: all .5s ease
+}
+    .divider-content-summary__icon {
+        display: table-cell;
+        vertical-align: middle;
+        text-align: center;
+    }
